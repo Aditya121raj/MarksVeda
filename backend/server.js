@@ -10,6 +10,7 @@ const app = express();
 app.use(cors({
   origin: process.env.FRONTEND_URL || '*'
 }));
+
 app.use(express.json());
 
 // Log incoming requests
@@ -31,12 +32,21 @@ mongoose.connect(MONGO_URI)
 // Routes
 app.use('/api/requests', requestRoutes);
 
-// Health check
+// Home Route
+app.get('/', (req, res) => {
+  res.send('MarksVeda Backend Running 🚀');
+});
+
+// Health Check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'MarksVeda API Running 🚀' });
+  res.json({
+    status: 'ok',
+    message: 'MarksVeda API Running 🚀'
+  });
 });
 
 const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
   console.log(`🚀 MarksVeda Backend Server running on http://localhost:${PORT}`);
 });
