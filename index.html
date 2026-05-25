@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MarksVeda Tutors - Premium Home & Online Tuitions. Find expert, verified personal tutors for school classes, coding, JEE, and NEET at your doorstep. Book a free demo class today!">
+    <meta name="keywords" content="home tutor, online tuition, math tutor, physics tutor, coding classes, JEE preparation, NEET coaching, home tuitions near me">
+    <title>MarksVeda | Unlock Better Learning at Home - Premium Home Tutors</title>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Dynamic Alert Notifications Container -->
+    <div id="notificationContainer" class="notification-container"></div>
+
+    <!-- 1. Sticky Navigation Bar -->
+    <header class="navbar-wrapper">
+        <div class="container navbar">
+            <!-- Brand Logo -->
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <!-- Premium Cap + Arrow SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                </div>
+                <span>MarksVeda</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#subjects" class="nav-link">Subjects</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
+                <a href="#why-choose" class="nav-link">Why Choose Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="nav-actions">
+                <a href="tel:+919876543210" class="btn btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 9.72z"/></svg>
+                    Call Now
+                </a>
+                <a href="#book-tutor" class="btn btn-accent">Book a Tutor</a>
+            </div>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="mobile-toggle" aria-label="Toggle Navigation Drawer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <!-- Hero Left Content -->
+                <div class="hero-content reveal-el">
+                    <div class="hero-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        100% Home Tutor Verification Guaranteed
+                    </div>
+                    <h1 class="hero-headline">
+                        Unlock Better <br><span>Learning at Home</span>
+                    </h1>
+                    <p class="hero-subheadline">
+                        Experienced, verified personal tutors for every class, board, and exam syllabus delivered right at your doorstep. Customized one-on-one attention for maximum results.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#book-tutor" class="btn btn-primary">
+                            Book a Tutor
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                        <a href="tel:+919876543210" class="btn btn-secondary">
+                            Call Coordinator
+                        </a>
+                    </div>
+                    <!-- Social Proof / Reviews -->
+                    <div class="hero-trust">
+                        <div class="trust-avatars">
+                            <img class="trust-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&fit=crop" alt="Parent Avatar">
+                            <img class="trust-avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&fit=crop" alt="Parent Avatar">
+                            <img class="trust-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&fit=crop" alt="Parent Avatar">
+                        </div>
+                        <div class="trust-info">
+                            <div class="trust-stars">
+                                ★★★★★
+                            </div>
+                            <p>Trusted by <strong>500+ Happy Parents</strong> in your city</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Illustration -->
+                <div class="hero-illustration reveal-el" style="transition-delay: 0.15s;">
+                    <img src="assets/hero.png" alt="Student Studying with Teacher at Home" class="illustration-img">
+                    
+                    <!-- Floating Widget 1 -->
+                    <div class="illustration-badge badge-1">
+                        <div class="badge-icon">👨‍🏫</div>
+                        <div class="badge-text">
+                            <h5>100+ Expert Tutors</h5>
+                            <p>Verified Profiles Only</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Widget 2 -->
+                    <div class="illustration-badge badge-2">
+                        <div class="badge-icon">🎓</div>
+                        <div class="badge-text">
+                            <h5>95% Success Rate</h5>
+                            <p>Proven Grade Improvement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Dynamic Stats Bar Section -->
+        <section class="stats-bar">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500" data-suffix="+">0+</div>
+                    <div class="stat-label">Students Guided</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100" data-suffix="+">0+</div>
+                    <div class="stat-label">Verified Home Tutors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="20" data-suffix="+">0+</div>
+                    <div class="stat-label">Subjects & Competitions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95" data-suffix="%">0%</div>
+                    <div class="stat-label">Satisfaction Rating</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Popular Subjects Grid -->
+        <section id="subjects" class="section">
+            <div class="container">
+                <div class="section-header reveal-el">
+                    <span class="badge">Comprehensive Curriculums</span>
+                    <h2 class="section-title">Popular Subjects We Teach</h2>
+                    <p class="section-subtitle">We offer bespoke learning programs matching CBSE, ICSE, IB, State Boards, and competitive exams across multiple classes.</p>
+                </div>
+
+                <div class="subjects-grid">
+                    <!-- Cards -->
+                    <div class="subject-card reveal-el">
+                        <div class="subject-icon-box">➗</div>
+                        <h3 class="subject-name">Maths</h3>
+                        <p class="subject-desc">Arithmetic, Algebra, Calculus & Geometry support</p>
+                    </div>
+
+                    <div class="subject-card reveal-el" style="transition-delay: 0.05s;">
+                        <div class="subject-icon-box">🧪</div>
+                        <h3 class="subject-name">Science</h3>
+                        <p class="subject-desc">General foundational science for early classes</p>
+                    </div>
+
+                    <div class="subject-card reveal-el" style="transition-delay: 0.1s;">
+                        <div class="subject-icon-box">⚛</div>
+                        <h3 class="subject-name">Physics</h3>
+                        <p class="subject-desc">Concept building, numerical formulas, kinematics</p>
+                    </div>
+
+                    <div class="subject-card reveal-el" style="transition-delay: 0.15s;">
+                        <div class="subject-icon-box">🧫</div>
+                        <h3 class="subject-name">Chemistry</h3>
+                        <p class="subject-desc">Organic reactions, inorganic periodic equations</p>
+                    </div>
+
+                    <div class="subject-card reveal-el" style="transition-delay: 0.2s;">
+                        <div class="subject-icon-box">🧬</div>
+                        <h3 class="subject-name">Biology</h3>
+                        <p class="subject-desc">Anatomy, cellular botany, diagrams & genetics</p>
+                    </div>
+
+                    <div class="subject-card reveal-el" style="transition-delay: 0.25s;">
+                        <div class="subject-icon-box">🇬🇧</div>
+                        <h3 class="subject-name">English</h3>
+                        <p class="subject-desc">Grammar mastery, literature prose, text composition</p>
+                    </div>
+
+                    <div class="subject-card reveal-el" style="transition-delay: 0.3s;">
+                        <div class="subject-icon-box">💻</div>
+                        <h3 class="subject-name">Coding</h3>
+                        <p class="subject-desc">Scratch, Python, HTML/JS for early developers</p>
+                    </div>
+
+                    <div class="subject-card reveal-el" style="transition-delay: 0.35s;">
+                        <div class="subject-icon-box">🎯</div>
+                        <h3 class="subject-name">JEE Prep</h3>
+                        <p class="subject-desc">Advanced engineering entrance exam drills</p>
+                    </div>
+
+                    <div class="subject-card reveal-el" style="transition-delay: 0.4s;">
+                        <div class="subject-icon-box">🏥</div>
+                        <h3 class="subject-name">NEET Prep</h3>
+                        <p class="subject-desc">Medical science concepts and question practice</p>
+                    </div>
+
+                    <div class="subject-card reveal-el" style="transition-delay: 0.45s;">
+                        <div class="subject-icon-box">🗣</div>
+                        <h3 class="subject-name">Spoken English</h3>
+                        <p class="subject-desc">Confidence building, public speech & conversation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. How It Works -->
+        <section id="how-it-works" class="section section-bg">
+            <div class="container">
+                <div class="section-header reveal-el">
+                    <span class="badge">Smooth Onboarding</span>
+                    <h2 class="section-title">How MarksVeda Works</h2>
+                    <p class="section-subtitle">A simple, verified, and hassle-free onboarding flow for parents. No complex portals—just easy learning.</p>
+                </div>
+
+                <div class="steps-container">
+                    <!-- Progress line background -->
+                    <div class="steps-timeline">
+                        <div class="steps-timeline-progress"></div>
+                    </div>
+
+                    <div class="steps-grid">
+                        <!-- Step 1 -->
+                        <div class="step-card reveal-el">
+                            <div class="step-number-box">1</div>
+                            <h3 class="step-title">Submit Requirements</h3>
+                            <p class="step-desc">Fill out our quick tuition requirement form below with student class, area, and timing.</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card reveal-el" style="transition-delay: 0.1s;">
+                            <div class="step-number-box">2</div>
+                            <h3 class="step-title">Coordinator Call</h3>
+                            <p class="step-desc">Our expert academic coordinator contacts you to understand student focus and learning gaps.</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card reveal-el" style="transition-delay: 0.2s;">
+                            <div class="step-number-box">3</div>
+                            <h3 class="step-title">Tutor Match & Demo</h3>
+                            <p class="step-desc">We manually hand-pick the perfect qualified home tutor and schedule a 100% free trial class.</p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-card reveal-el" style="transition-delay: 0.3s;">
+                            <div class="step-number-box">4</div>
+                            <h3 class="step-title">Start Learning</h3>
+                            <p class="step-desc">Once satisfied with the demo, lock the schedule and watch your child excel in academics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Why Choose MarksVeda -->
+        <section id="why-choose" class="section">
+            <div class="container benefits-grid">
+                <!-- Left Text info -->
+                <div class="benefits-text reveal-el">
+                    <span class="badge">Our Pillars</span>
+                    <h2 class="benefits-title">Why Parents Trust MarksVeda</h2>
+                    <p class="benefits-desc">We bridge the gap between struggling students and exceptional tutoring talent. With zero complex logins, we handle everything for you manually to ensure maximum control over quality.</p>
+                    <a href="#book-tutor" class="btn btn-primary">Book Free Trial Class</a>
+                </div>
+
+                <!-- Right Cards Grid -->
+                <div class="benefits-list-cards">
+                    <div class="benefit-card reveal-el">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3 class="benefit-title">Verified Tutors</h3>
+                        <p class="benefit-desc">Every educator undergoes strict background, identity, and academic checks.</p>
+                    </div>
+
+                    <div class="benefit-card reveal-el" style="transition-delay: 0.05s;">
+                        <div class="benefit-icon">🎁</div>
+                        <h3 class="benefit-title">Free Demo Class</h3>
+                        <p class="benefit-desc">Pay only after you are completely satisfied with the assigned tutor's teaching.</p>
+                    </div>
+
+                    <div class="benefit-card reveal-el" style="transition-delay: 0.1s;">
+                        <div class="benefit-icon">💸</div>
+                        <h3 class="benefit-title">Affordable Fees</h3>
+                        <p class="benefit-desc">Top-tier customized learning structured within standard market budgets.</p>
+                    </div>
+
+                    <div class="benefit-card reveal-el" style="transition-delay: 0.15s;">
+                        <div class="benefit-icon">🏡</div>
+                        <h3 class="benefit-title">At-Home Safety</h3>
+                        <p class="benefit-desc">Save travel time. Let your child study securely inside the comfort of home.</p>
+                    </div>
+
+                    <!-- Highlighted Wide card -->
+                    <div class="benefit-card benefit-card-accent reveal-el" style="transition-delay: 0.2s;">
+                        <div class="benefit-icon">⚡</div>
+                        <h3 class="benefit-title">1:1 Personalized Blueprint</h3>
+                        <p class="benefit-desc">Unlike generic school classes, we study the child's strengths and adapt the pace specifically to them. Perfect for fast learners and students who require intensive revision alike.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Form Request Tuition section (Notebook Scholastic Theme) -->
+        <section id="book-tutor" class="section section-bg form-section">
+            
+            <!-- Floating Scholastic Math Particles -->
+            <div class="math-particle particle-1">E = mc²</div>
+            <div class="math-particle particle-2">a² + b² = c²</div>
+            <div class="math-particle particle-3">H₂O</div>
+            <div class="math-particle particle-4">∑ (xᵢ - μ)²</div>
+
+            <div class="container form-grid">
+                <!-- Form left details with dynamic calculator -->
+                <div class="form-info-pane reveal-el">
+                    <span class="badge">Inquire Now</span>
+                    <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 20px;">Request a Verified Tutor Today</h2>
+                    <p class="section-subtitle" style="margin-bottom: 20px;">Takes less than 60 seconds. Our academic coordinator will call you back within 15 minutes of submission to lock in your free trial.</p>
+                    
+                    <div class="info-bullet">
+                        <div class="info-bullet-icon">✓</div>
+                        <div class="info-bullet-text">
+                            <h4>No Registration Fees</h4>
+                            <p>Free custom profiling and trial assignment.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-bullet" style="margin-bottom: 0;">
+                        <div class="info-bullet-icon">✓</div>
+                        <div class="info-bullet-text">
+                            <h4>Experienced Faculty</h4>
+                            <p>Bespoke specialists for primary, high school, coding, and JEE/NEET.</p>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Study Hours Planner -->
+                    <div class="calculator-card">
+                        <h3 class="calculator-title">📊 Dynamic Monthly Study Planner</h3>
+                        <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:16px;">Drag sliders below to estimate the required academic attention per month.</p>
+                        
+                        <div class="calculator-group">
+                            <div class="calculator-label">
+                                <span>Classes per Week</span>
+                                <strong id="calcFreqVal">3 Classes</strong>
+                            </div>
+                            <input type="range" id="calcFreq" class="calculator-slider" min="1" max="6" value="3">
+                        </div>
+
+                        <div class="calculator-group">
+                            <div class="calculator-label">
+                                <span>Class Duration</span>
+                                <strong id="calcDurationVal">1.5 Hours</strong>
+                            </div>
+                            <input type="range" id="calcDuration" class="calculator-slider" min="1" max="3" step="0.5" value="1.5">
+                        </div>
+
+                        <div class="calculator-results">
+                            <div>
+                                <p>Total Monthly Focus</p>
+                                <h4>~ <span id="calcTotalHours">18</span> Hours</h4>
+                            </div>
+                            <div style="text-align:right;">
+                                <p>Matching Urgency</p>
+                                <strong style="color:var(--primary-blue); font-size:0.95rem;">⚡ Instant Match</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Right Notebook Wrapper Card -->
+                <div id="contact" class="notebook-container reveal-el" style="transition-delay: 0.1s;">
+                    <!-- Metal Notepad Spirals on the left -->
+                    <div class="notebook-spirals">
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                        <span class="spiral-ring"></span>
+                    </div>
+
+                    <!-- Red notepad schoolbook margin rule line -->
+                    <div class="notebook-margin-line"></div>
+
+                    <!-- Custom rotating stamp verification seal -->
+                    <div class="guarantee-seal-box">
+                        <svg class="seal-svg" viewBox="0 0 100 100">
+                            <path id="seal-text-path" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+                            <circle cx="50" cy="50" r="30" fill="none" stroke="var(--accent-green)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                            <text font-family="var(--font-heading)" font-weight="800" font-size="8.2" fill="var(--accent-green-dark)">
+                                <textPath href="#seal-text-path" startOffset="0%">★ VERIFIED TUTOR MATCH ★ 100% SUCCESS SECURED</textPath>
+                            </text>
+                            <text x="50%" y="54%" text-anchor="middle" font-family="var(--font-heading)" font-weight="800" font-size="14" fill="var(--primary-blue)">MV</text>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="form-wrapper-title" style="margin-bottom:6px; padding-left:10px;">Tuition Planner Worksheet</h3>
+                    <p class="form-wrapper-subtitle" style="margin-bottom:24px; padding-left:10px;">Fill coordinates below to assign your child's home educator.</p>
+                    
+                    <form id="tutorRequestForm" style="padding-left:10px;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parentName" class="form-label">Parent Name *</label>
+                                <div class="form-input-wrapper">
+                                    <input type="text" id="parentName" class="form-control form-control-iconic" placeholder="e.g. Sanjay Sharma" required>
+                                    <span class="form-input-icon">👤</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="studentName" class="form-label">Student Name</label>
+                                <div class="form-input-wrapper">
+                                    <input type="text" id="studentName" class="form-control form-control-iconic" placeholder="e.g. Amit Sharma">
+                                    <span class="form-input-icon">🎓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentClass" class="form-label">Class / Grade *</label>
+                                <div class="form-input-wrapper">
+                                    <select id="studentClass" class="form-control form-control-iconic" required>
+                                        <option value="" disabled selected>Select class</option>
+                                        <optgroup label="Primary School">
+                                            <option value="Class 1 to 5">Class 1 to 5</option>
+                                        </optgroup>
+                                        <optgroup label="Middle School">
+                                            <option value="Class 6">Class 6</option>
+                                            <option value="Class 7">Class 7</option>
+                                            <option value="Class 8">Class 8</option>
+                                        </optgroup>
+                                        <optgroup label="High School">
+                                            <option value="Class 9 (CBSE/ICSE)">Class 9</option>
+                                            <option value="Class 10 (CBSE/ICSE)">Class 10</option>
+                                            <option value="Class 11 (Science/Commerce/Arts)">Class 11</option>
+                                            <option value="Class 12 (Science/Commerce/Arts)">Class 12</option>
+                                        </optgroup>
+                                        <optgroup label="Competitions">
+                                            <option value="JEE Preparation">JEE Prep</option>
+                                            <option value="NEET Preparation">NEET Prep</option>
+                                            <option value="Spoken English / Personality">Spoken English</option>
+                                        </optgroup>
+                                    </select>
+                                    <span class="form-input-icon">🏫</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject Needed *</label>
+                                <div class="form-input-wrapper">
+                                    <input type="text" id="subject" class="form-control form-control-iconic" placeholder="e.g. Maths, Physics, Chemistry" required>
+                                    <span class="form-input-icon">📚</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <div class="form-input-wrapper">
+                                    <input type="tel" id="phone" class="form-control form-control-iconic" placeholder="e.g. +91 98765 43210" required>
+                                    <span class="form-input-icon">📞</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="location" class="form-label">Area / Location *</label>
+                                <div class="form-input-wrapper">
+                                    <input type="text" id="location" class="form-control form-control-iconic" placeholder="e.g. Whitefield, Sector 62" required>
+                                    <span class="form-input-icon">📍</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="preferredTiming" class="form-label">Preferred Timing</label>
+                                <div class="form-input-wrapper">
+                                    <input type="text" id="preferredTiming" class="form-control form-control-iconic" placeholder="e.g. Weekdays 5 PM to 7 PM">
+                                    <span class="form-input-icon">🕒</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Tuition Type *</label>
+                                <div class="tuition-toggle-group">
+                                    <div class="tuition-toggle-btn selected">
+                                        <input type="radio" name="ttype" value="Home" checked>
+                                        🏡 Home Tuition
+                                    </div>
+                                    <div class="tuition-toggle-btn">
+                                        <input type="radio" name="ttype" value="Online">
+                                        💻 Online Live
+                                    </div>
+                                </div>
+                                <input type="hidden" id="tuitionType" value="Home">
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="notes" class="form-label">Additional Notes / Student Needs</label>
+                            <div class="form-input-wrapper">
+                                <textarea id="notes" rows="3" class="form-control form-control-notebook form-control-iconic" placeholder="Mention any learning gaps, board name, or specific tutor expectations..."></textarea>
+                                <span class="form-input-icon" style="top: 14px;">✍️</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: var(--radius-sm); margin-top: 10px; z-index:5; position:relative;">
+                            Match & Assign Tutor Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Testimonials Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal-el">
+                    <span class="badge">Parent Endorsements</span>
+                    <h2 class="section-title">What Parents Say</h2>
+                    <p class="section-subtitle">Real feedback from satisfied parents whose children have experienced significant conceptual clarity and improved grades.</p>
+                </div>
+
+                <div class="testimonials-slider reveal-el">
+                    <div class="slider-container">
+                        <!-- Card 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-inner">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-quote">"MarksVeda has been a blessing. My daughter in Class 10 was struggling with Physics numericals. The tutor provided by MarksVeda made concepts so easy that she scored 94% in her boards! Absolutely recommend their personalized approach."</p>
+                                <div class="testimonial-profile">
+                                    <div class="testimonial-avatar" style="background-color: var(--primary-blue)">MS</div>
+                                    <div class="testimonial-details">
+                                        <h4>Meenakshi Sharma</h4>
+                                        <p>Parent of Class 10 Student • Noida</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-inner">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-quote">"We tried several tuition centers, but my son got lost in the crowded classrooms. MarksVeda matched us with a coding and math tutor. One-on-one attention made a huge difference. He is now designing games!"</p>
+                                <div class="testimonial-profile">
+                                    <div class="testimonial-avatar" style="background-color: var(--accent-green)">RK</div>
+                                    <div class="testimonial-details">
+                                        <h4>Raman Krishnan</h4>
+                                        <p>Parent of Class 8 Student • Bengaluru</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-inner">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-quote">"The process is incredibly seamless. I submitted the form on a Tuesday, the coordinator called back in 10 minutes, and the demo was set for Thursday. The tutor is highly professional and punctual."</p>
+                                <div class="testimonial-profile">
+                                    <div class="testimonial-avatar" style="background-color: #f59e0b">AP</div>
+                                    <div class="testimonial-details">
+                                        <h4>Amit Patel</h4>
+                                        <p>Parent of Class 12 Student • Gurugram</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-inner">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <p class="testimonial-quote">"Finding a good tutor for NEET Physics was stressful. MarksVeda matched us with a specialized master educator. My daughter's confidence has skyrocketed and mock scores went up from 420 to 610."</p>
+                                <div class="testimonial-profile">
+                                    <div class="testimonial-avatar" style="background-color: #6366f1">VP</div>
+                                    <div class="testimonial-details">
+                                        <h4>Dr. Vineeta Prasad</h4>
+                                        <p>Parent of NEET Aspirant • Delhi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-btn prev" aria-label="Previous Reviews">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                        </button>
+                        <div class="slider-dots">
+                            <!-- Populated dynamically by JS -->
+                        </div>
+                        <button class="slider-btn next" aria-label="Next Reviews">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. FAQ Section -->
+        <section class="section section-bg">
+            <div class="container">
+                <div class="section-header reveal-el">
+                    <span class="badge">Got Questions?</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Clear information regarding tutor match processes, trial classes, billing, and scheduling queries.</p>
+                </div>
+
+                <div class="faq-grid reveal-el">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h3 class="faq-question">How does the 100% Free Trial work?</h3>
+                            <span class="faq-chevron">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </span>
+                        </div>
+                        <div class="faq-collapse">
+                            <div class="faq-body">
+                                Once you submit your requirements, we assign a custom-matched tutor for a demo class. This demo class is completely free of charge. If you like the teacher, you pay only for subsequent scheduled classes. If you are not satisfied, we assign another tutor for a new demo without any extra charge.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h3 class="faq-question">How do you verify the tutors?</h3>
+                            <span class="faq-chevron">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </span>
+                        </div>
+                        <div class="faq-collapse">
+                            <div class="faq-body">
+                                Every tutor matched by MarksVeda passes through a comprehensive multi-layered check. This includes identity validation, educational credential verification, and a subjective screening of their previous teaching track record.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h3 class="faq-question">Is there a teacher profile portal?</h3>
+                            <span class="faq-chevron">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </span>
+                        </div>
+                        <div class="faq-collapse">
+                            <div class="faq-body">
+                                No, there is no teacher profile search or login portal. MarksVeda does not rely on random automated lists. Our academic experts review each tutoring request manually to align teacher expertise, geography, availability, and personality with your child for a perfect, lasting match.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h3 class="faq-question">What if we need to change the class timing?</h3>
+                            <span class="faq-chevron">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </span>
+                        </div>
+                        <div class="faq-collapse">
+                            <div class="faq-body">
+                                Timings can be easily coordinated directly with the tutor or through our helpline support coordinate panel. We support reschedule changes in case of upcoming school exams, travels, or personal events.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h3 class="faq-question">What are the fees for home tuitions?</h3>
+                            <span class="faq-chevron">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </span>
+                        </div>
+                        <div class="faq-collapse">
+                            <div class="faq-body">
+                                Fees depend on the student's class, subjects selected, study format (Home vs Online), and frequency of classes. Our packages are highly competitive and structured openly. Our coordinator will provide a complete pricing blueprint during the onboarding call.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 10. Floating Interactive Triggers -->
+    <div class="floating-actions">
+        <!-- Floating WhatsApp -->
+        <a href="https://wa.me/919876543210?text=Hi%20MarksVeda,%20I%20am%20looking%20for%20a%20home%20tutor%20for%20my%20child." target="_blank" class="floating-btn floating-btn-whatsapp" aria-label="Chat on WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+        <!-- Floating Direct Call -->
+        <a href="tel:+919876543210" class="floating-btn floating-btn-call" aria-label="Call MarksVeda Support">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 9.72z"/></svg>
+        </a>
+    </div>
+
+    <!-- 11. Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <!-- Brand Block -->
+            <div class="footer-info">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                    </div>
+                    <span>MarksVeda</span>
+                </a>
+                <p class="footer-desc">Premium customized at-home and live online personal tutor assignments matching the unique focus speed and syllabus requirement of your children.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link" aria-label="Visit Facebook page">F</a>
+                    <a href="#" class="social-link" aria-label="Visit Twitter feed">T</a>
+                    <a href="#" class="social-link" aria-label="Visit Instagram page">I</a>
+                    <a href="#" class="social-link" aria-label="Visit LinkedIn network">L</a>
+                </div>
+            </div>
+
+            <!-- Fast Navigation Links -->
+            <div class="footer-links">
+                <h4 class="footer-links-title">Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#subjects" class="footer-link">Popular Subjects</a></li>
+                    <li><a href="#how-it-works" class="footer-link">How it Works</a></li>
+                    <li><a href="#why-choose" class="footer-link">Why Choose Us</a></li>
+                    <li><a href="#book-tutor" class="footer-link">Book a Tutor Form</a></li>
+                </ul>
+            </div>
+
+            <!-- Corporate Contact Details -->
+            <div class="footer-contact">
+                <h4 class="footer-links-title">Support Desk</h4>
+                <div class="footer-contact-details">
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📍</span>
+                        <p>MarksVeda Education Complex, Sector 62, Noida, NCR, India</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📞</span>
+                        <p>Helpline: <a href="tel:+919876543210">+91 98765 43210</a></p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">✉</span>
+                        <p>Support: <a href="mailto:support@marksveda.com">support@marksveda.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 MarksVeda Education Private Limited. All rights reserved.</p>
+            <!-- Secret Mock-Admin Portal Toggle -->
+            <p><span id="adminDashboardToggle" class="footer-admin-link">🔓 Admin Access</span></p>
+        </div>
+    </footer>
+
+    <!-- 12. Interactive Receipt Success Modal Overlay -->
+    <div id="successModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close success details">✕</button>
+            <div class="success-icon-badge">✓</div>
+            <h2 style="color: var(--primary-dark); font-size: 1.6rem; margin-bottom: 8px;">Tuition Request Logged!</h2>
+            <p style="color: var(--text-muted); font-size: 0.92rem;">Our academic coordinator is generating tutor matches and will call you in a few minutes.</p>
+            
+            <!-- Dynamic Receipt mock -->
+            <div class="receipt-box">
+                <div class="receipt-title">
+                    <span>MarksVeda Tutors</span>
+                    <strong id="receiptId">MV-000000</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>Logged Date:</span>
+                    <strong id="receiptDate">--/--/----</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>Parent Name:</span>
+                    <strong id="receiptParent">--</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>Grade Class:</span>
+                    <strong id="receiptClass">--</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>Subjects Requested:</span>
+                    <strong id="receiptSubject">--</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>Mode:</span>
+                    <strong id="receiptType">--</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>Area:</span>
+                    <strong id="receiptLocation">--</strong>
+                </div>
+                <div class="receipt-row" style="border-top:1px solid #e2e8f0; padding-top:10px; margin-top:10px; font-weight:700;">
+                    <span>Match Status:</span>
+                    <span id="receiptStatus" style="color:var(--primary-blue)">Searching Database</span>
+                </div>
+            </div>
+
+            <div style="display:flex; gap:12px; justify-content:center;">
+                <button id="printReceiptBtn" class="btn btn-secondary" style="padding:10px 20px; font-size:0.88rem;">🖨 Print / PDF</button>
+                <button class="btn btn-primary modal-btn-close" style="padding:10px 20px; font-size:0.88rem;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 13. Secret Dashboard Modal Container (Mock Admin Portal) -->
+    <div id="adminDashboardOverlay" class="dashboard-overlay">
+        <div class="dashboard-content">
+            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid var(--border-color); padding-bottom:16px; margin-bottom:20px;">
+                <h2 style="font-size:1.6rem; color:var(--primary-dark); display:flex; align-items:center; gap:10px;">
+                    <span>🛡️ MarksVeda Tutors Lead Routing Desk</span>
+                </h2>
+                <button id="adminDashboardClose" style="background:transparent; border:none; cursor:pointer; font-size:1.5rem; color:var(--text-light); font-weight:bold;">✕</button>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.88rem; margin-bottom:20px;">
+                As the admin, you can review parent tutoring requests, clear leads, match tutors (manually assigning tutors marks them as complete), or review client locations. (Tip: You can also open this desk by pressing <strong>Ctrl + Shift + A</strong> anywhere on the site).
+            </p>
+            
+            <div style="display:flex; justify-content:flex-end; gap:12px; margin-bottom:16px;">
+                <button id="clearDatabaseBtn" class="btn" style="background-color:#ef4444; color:#fff; font-size:0.8rem; padding:8px 16px; border-radius:4px;">🗑 Clear All Records</button>
+            </div>
+
+            <!-- Leads database table -->
+            <div class="dashboard-table-wrapper">
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Inquiry ID</th>
+                            <th>Parent Details</th>
+                            <th>Class</th>
+                            <th>Subjects</th>
+                            <th>Location Area</th>
+                            <th>Mode</th>
+                            <th>Matching Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dashboardTableBody">
+                        <!-- Populated dynamically by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Core Engine -->
+    <script src="app.js"></script>
+</body>
+</html>

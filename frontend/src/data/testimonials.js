@@ -1,0 +1,6 @@
+export const testimonials = [
+  { name: 'Meenakshi Sharma', role: 'Parent of Class 10 Student • Noida', quote: 'MarksVeda has been a blessing. My daughter in Class 10 was struggling with Physics numericals. The tutor provided by MarksVeda made concepts so easy that she scored 94% in her boards! Absolutely recommend their personalized approach.', bg: '#2563eb' },
+  { name: 'Raman Krishnan', role: 'Parent of Class 8 Student • Bengaluru', quote: 'We tried several tuition centers, but my son got lost in the crowded classrooms. MarksVeda matched us with a coding and math tutor. One-on-one attention made a huge difference. He is now designing games!', bg: '#10b981' },
+  { name: 'Amit Patel', role: 'Parent of Class 12 Student • Gurugram', quote: 'The process is incredibly seamless. I submitted the form on a Tuesday, the coordinator called back in 10 minutes, and the demo was set for Thursday. The tutor is highly professional and punctual.', bg: '#f59e0b' },
+  { name: 'Dr. Vineeta Prasad', role: 'Parent of NEET Aspirant • Delhi', quote: "Finding a good tutor for NEET Physics was stressful. MarksVeda matched us with a specialized master educator. My daughter's confidence has skyrocketed and mock scores went up from 420 to 610.", bg: '#6366f1' }
+];
