@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
-const API_URL = import.meta.env.VITE_API_URL || 'https://marksveda.onrender.com';
+import { api } from '../../services/api';
+
 export default function TutorRequestForm({ onTrackClick }) {
   // Study Planner sliders
   const [sliderClassesPerWeek, setSliderClassesPerWeek] = useState(3);
@@ -36,32 +37,28 @@ export default function TutorRequestForm({ onTrackClick }) {
     setIsSubmitting(true);
     try {
       const formattedNotes = `[Planner: ${sliderClassesPerWeek} classes/wk @ ${sliderDuration} hrs/class] ` + (notes || 'No extra guidelines');
-      const res = await fetch('/api/requests', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          parentName,
-          studentName: studentName || 'Not Specified',
-          gradeClass,
-          subject,
-          syllabusBoard,
-          phone,
-          location,
-          preferredTiming: preferredTiming || 'Flexible',
-          tuitionType,
-          genderPreference,
-          budgetRange,
-          demoDate,
-          demoTime,
-          classesPerWeek: sliderClassesPerWeek,
-          classDuration: sliderDuration,
-          notes: formattedNotes
-        })
+      const result = await api.submitTuitionInquiry({
+        parentName,
+        studentName: studentName || 'Not Specified',
+        gradeClass,
+        subject,
+        syllabusBoard,
+        phone,
+        location,
+        preferredTiming: preferredTiming || 'Flexible',
+        tuitionType,
+        genderPreference,
+        budgetRange,
+        demoDate,
+        demoTime,
+        classesPerWeek: sliderClassesPerWeek,
+        classDuration: sliderDuration,
+        notes: formattedNotes
       });
-      const result = await res.json();
-      if (result.success) {
-        setSubmitSuccess(result.data);
-        confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+    if (result) {
+      setSubmitSuccess(result);
+
+      confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
         setParentName(''); setStudentName(''); setSubject('');
         setPhone(''); setLocation(''); setPreferredTiming('');
         setDemoDate(''); setDemoTime(''); setNotes('');
