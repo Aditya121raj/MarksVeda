@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { api } from '../../services/api';
 
 export default function AdminModal({ onClose, tutorPool }) {
   const [adminPassword, setAdminPassword] = useState('');
@@ -10,13 +11,10 @@ export default function AdminModal({ onClose, tutorPool }) {
   // Fetch requests for coordinator dashboard
   const fetchAllRequests = async () => {
     try {
-      const res = await fetch('/api/requests');
-      const data = await res.json();
-      if (data.success) {
-        setAllRequests(data.data);
-      }
+      const data = await api.fetchRequests();
+      setAllRequests(data);
     } catch (err) {
-      // failed silently
+      console.log(err);
     }
   };
 
@@ -29,6 +27,7 @@ export default function AdminModal({ onClose, tutorPool }) {
   // Admin login handling
   const handleAdminAuth = (e) => {
     e.preventDefault();
+
     if (adminPassword === 'admin123') {
       setIsAdminAuthenticated(true);
       setAdminError('');
@@ -40,22 +39,13 @@ export default function AdminModal({ onClose, tutorPool }) {
   // Admin: Assign specific elite tutor
   const handleAdminAssignTutor = async (reqId, tutor) => {
     try {
-      const res = await fetch(`/api/requests/${reqId}/assign`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          tutor,
-          status: 'Assigned & Learning',
-          demoDate: new Date(Date.now() + 86400000).toISOString().split('T')[0], // tomorrow
-          demoTime: '05:00 PM'
-        })
-      });
-      const data = await res.json();
-      if (data.success) {
-        alert(`Elite Tutor ${tutor.name} assigned successfully! Simulated SMS alerts sent.`);
-        fetchAllRequests();
-        setSelectedRequestForAssign(null);
-      }
+      await api.assignTutor(reqId, tutor);
+
+      alert(`Elite Tutor ${tutor.name} assigned successfully!`);
+
+      fetchAllRequests();
+      setSelectedRequestForAssign(null);
+
     } catch (err) {
       alert('Failed to assign tutor.');
     }
@@ -64,16 +54,11 @@ export default function AdminModal({ onClose, tutorPool }) {
   // Admin: Update matched status
   const handleAdminUpdateStatus = async (reqId, newStatus) => {
     try {
-      const res = await fetch(`/api/requests/${reqId}/status`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ status: newStatus })
-      });
-      const data = await res.json();
-      if (data.success) {
-        alert('Pipeline status updated.');
-        fetchAllRequests();
-      }
+      await api.updateRequestStatus(reqId, newStatus);
+
+      alert('Pipeline status updated.');
+      fetchAllRequests();
+
     } catch (err) {
       alert('Failed to update status.');
     }
@@ -82,15 +67,13 @@ export default function AdminModal({ onClose, tutorPool }) {
   // Admin: Delete Request
   const handleAdminDelete = async (reqId) => {
     if (!window.confirm('Delete this tuition request permanently?')) return;
+
     try {
-      const res = await fetch(`/api/requests/${reqId}`, {
-        method: 'DELETE'
-      });
-      const data = await res.json();
-      if (data.success) {
-        alert('Tuition inquiry deleted.');
-        fetchAllRequests();
-      }
+      await api.deleteRequest(reqId);
+
+      alert('Tuition inquiry deleted.');
+      fetchAllRequests();
+
     } catch (err) {
       alert('Failed to delete inquiry.');
     }
