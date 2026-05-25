@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
-
+const API_URL = import.meta.env.VITE_API_URL || 'https://marksveda.onrender.com';
 export default function TutorRequestForm({ onTrackClick }) {
   // Study Planner sliders
   const [sliderClassesPerWeek, setSliderClassesPerWeek] = useState(3);
@@ -68,9 +68,10 @@ export default function TutorRequestForm({ onTrackClick }) {
       } else {
         alert('Error: ' + result.error);
       }
-    } catch {
-      alert('Connection failed. Make sure server is running.');
-    } finally {
+    } catch (err) {
+  console.log(err);
+  alert('Could not connect to MarksVeda server.');
+} finally {
       setIsSubmitting(false);
     }
   };
