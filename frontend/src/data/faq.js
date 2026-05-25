@@ -1,4 +1,4 @@
-export const faqData = [
+export const FAQ_DATA = [
   { q: 'How does the 100% Free Trial work?', a: 'Once you submit your requirements, we assign a custom-matched tutor for a demo class. This demo class is completely free of charge. If you like the teacher, you pay only for subsequent scheduled classes. If you are not satisfied, we assign another tutor for a new demo without any extra charge.' },
   { q: 'How do you verify the tutors?', a: 'Every tutor matched by MarksVeda passes through a comprehensive multi-layered check. This includes identity validation, educational credential verification, and a subjective screening of their previous teaching track record.' },
   { q: 'Is there a teacher profile portal?', a: 'No, there is no teacher profile search or login portal. MarksVeda does not rely on random automated lists. Our academic experts review each tutoring request manually to align teacher expertise, geography, availability, and personality with your child for a perfect, lasting match.' },

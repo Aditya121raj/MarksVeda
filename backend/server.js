@@ -7,8 +7,16 @@ const requestRoutes = require('./routes/requestRoutes');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: process.env.FRONTEND_URL || '*'
+}));
 app.use(express.json());
+
+// Log incoming requests
+app.use((req, res, next) => {
+  console.log(`[${new Date().toLocaleTimeString()}] ${req.method} ${req.url}`);
+  next();
+});
 
 // MongoDB Connection
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/marksveda';

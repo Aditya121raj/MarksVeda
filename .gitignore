@@ -1,0 +1,25 @@
+# Git ignore rules
+
+# Environment files — NEVER commit these
+.env
+.env.local
+.env.production
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor configs
+.vscode/
+.idea/
